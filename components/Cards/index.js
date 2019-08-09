@@ -41,7 +41,7 @@
             img.src = article.authorPhoto; 
 
             const name = document.createElement('span');
-            name,textContent = `By ${article.authorName}`;
+            name.textContent = `By ${article.authorName}`;
 
             card.appendChild(headline);
             card.appendChild(author);
