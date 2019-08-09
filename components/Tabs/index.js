@@ -11,16 +11,11 @@
 axios.get('https://lambda-times-backend.herokuapp.com/topics')
 .then( (response) => {
     response.data.topics.forEach(topic => {
-        // console.log(topic);
         const tab = document.createElement('div');
         tab.classList.add('tab');
         tab.textContent = topic;
         topicsContainer.appendChild(tab);
-
     })
-
-
-    
   })
 
 let topicsContainer = document.querySelector('.topics');
